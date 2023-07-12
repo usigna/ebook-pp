@@ -1,2 +1,2 @@
 # ebook-pp
-Landing page for ebook (Photographer's portfolio)
+Landing page for an eBook (Photographer's portfolio).
