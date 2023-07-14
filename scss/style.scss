@@ -193,13 +193,14 @@ body {
   padding: 28px 0 0;
 
   @media screen and (min-width: $laptopWidth) {
-    height: 100%;
+    height: 100vh;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
     gap: 164px;
     padding: 0;
+    overflow: hidden;
   }
 }
 
