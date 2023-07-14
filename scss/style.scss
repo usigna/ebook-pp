@@ -47,6 +47,10 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
+
+  @media screen and (min-width: $tabletWidth) {
+    width: 80%;
+  }
 }
 
 /* loader */
@@ -196,7 +200,6 @@ body {
     flex-direction: row;
     gap: 164px;
     padding: 0;
-    overflow: hidden;
   }
 }
 
@@ -315,6 +318,7 @@ body {
     -ms-flex-align: start;
     align-items: flex-start;
     text-align: left;
+    overflow: hidden;
   }
 }
 
@@ -428,8 +432,9 @@ body {
     flex-direction: column;
     position: absolute;
     top: 50%;
-    right: 0;
+    right: -10%;
     padding: 0;
+    overflow: hidden;
   }
 
   a {
