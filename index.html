@@ -15,6 +15,68 @@
 
   <body>
 
+    <div class="loader">
+      <div class="stripes">
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+      </div>
+
+      <div class="loading" aria-hidden="true">
+        <span class="loading__span" style="--i:1">L</span>
+        <span class="loading__span" style="--i:2">o</span>
+        <span class="loading__span" style="--i:3">a</span>
+        <span class="loading__span" style="--i:4">d</span>
+        <span class="loading__span" style="--i:5">i</span>
+        <span class="loading__span" style="--i:6">n</span>
+        <span class="loading__span" style="--i:7">g</span>
+        <span class="loading__span" style="--i:8">.</span>
+        <span class="loading__span" style="--i:9">.</span>
+        <span class="loading__span" style="--i:10">.</span>
+      </div>
+    </div>
+
+    <div class="container wrapper">
+      <div class="image-wrapper">
+        <div class="book">
+          <img src="img/cover.png" alt="" />
+        </div>
+      </div>
+      <div class="text-wrapper">
+        <h1 class="title" lang="en">Photographer's portfolio</h1>
+        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque optio minus rem porro vero molestiae quidem, nihil quaerat vel repudiandae culpa rerum fugiat eveniet sunt enim veniam error, doloremque commodi assumenda accusamus temporibus illum ipsam quae? Asperiores impedit aliquid minima odio ex eum odit praesentium vel laudantium, officiis deleniti harum.</p>
+        <form action="" class="form">
+          <label for="email" class="sr-only">Adres e-mail:</label>
+          <div class="form__item">
+            <input type="email" id="email" placeholder="name@email.com" class="input" required  />
+            <button class="btn" type="submit">Zapisz się</button>
+          </div>
+        </form>
+      </div>
+      <ul class="social-media">
+        <li>
+          <a href="#">
+            <img src="img/instagram.svg" alt="Instagram." />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/twitter.svg" alt="Twitter." />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/facebook.svg" alt="Facebook." />
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
