@@ -1,67 +1,15 @@
 function animations() {
-  gsap.to('.stripe', {
-    scaleY: 1,
-    stagger: 0.3,
-    ease: 'power3.out'
-  });
-  
-  gsap.to('.loading span', {
-    duration: 1,
-    opacity: 1,
-    stagger: 0.1,
-    delay: 1,
-    ease: 'power3.out'
-  });
-  
-  gsap.to('.stripe', {
-    scaleY: 0,
-    stagger: 0.3,
-    delay: 5,
-    ease: 'power3.out'
-  });
-  
-  gsap.to('.loading span', {
-    duration: 1,
-    opacity: 0,
-    stagger: 0.1,
-    delay: 5,
-    ease: 'power3.out'
-  });
+  let tl = gsap.timeline();
 
-  gsap.to('.image-wrapper', {
-    y: 0,
-    stagger: 0.3,
-    delay: 7,
-    ease: 'power3.out'
-  });
-
-  gsap.to('.title', {
-    y: 0,
-    stagger: 0.3,
-    delay: 7.5,
-    ease: 'power3.out'
-  });
-
-  gsap.to('.text', {
-    y: 0,
-    stagger: 0.3,
-    delay: 8,
-    ease: 'power3.out'
-  });
-
-  gsap.to('.form__item', {
-    y: 0,
-    stagger: 0.3,
-    delay: 8.5,
-    ease: 'power3.out'
-  });
-
-  gsap.to('.social-media a', {
-    y: 0,
-    stagger: 0.3,
-    delay: 9,
-    ease: 'power3.out'
-  });
+  tl.to('.stripe', {scaleY: 1, stagger: 0.3, ease: 'power3.in'});
+  tl.to('.loading span', {duration: 1, opacity: 1, stagger: 0.1, ease: 'power3.in'});
+  tl.to('.loading span', {duration: 1, opacity: 0, stagger: 0.1, delay: 2, ease: 'power3.out'});
+  tl.to('.stripe', {scaleY: 0, stagger: 0.3, ease: 'power3.out'});
+  tl.to('.image-wrapper', {duration: 1, y: 0, ease: 'power3.out'});
+  tl.to('.title', {duration: 1, y: 0, ease: 'power3.out'});
+  tl.to('.text', {duration: 1, y: 0, ease: 'power3.out'});
+  tl.to('.form__item', {duration: 1, y: 0, ease: 'power3.out'});
+  tl.to('.social-media a', {duration: 1, y: 0, stagger: 0.3, ease: 'power3.out'});
 }
 
 function showAnimations() {
